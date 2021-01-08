@@ -1,0 +1,36 @@
+
+GET http://localhost:3000/usuarios
+###
+POST http://localhost:3000/usuarios/cadastro
+Content-type: application/json
+
+{
+    "nome": "Teste 1",
+    "cpf": 1,
+    "saldo": 1.11
+}
+###
+POST http://localhost:3000/usuarios/cadastro
+Content-type: application/json
+
+{
+    "nome": "Teste 2",
+    "cpf": 2,
+    "saldo": 2.22
+}
+###
+POST http://localhost:3000/usuarios/login
+Content-type: application/json
+
+{
+    "id": 1,
+    "cpf": "1"
+}
+###
+POST http://localhost:3000/usuarios/saldo
+Content-type: application/json
+
+{
+  "token": "2lamjzq5hm7fey87v1ictg"
+}
+

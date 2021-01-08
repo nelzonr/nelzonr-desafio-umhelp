@@ -1,0 +1,29 @@
+GET http://localhost:3000/transacoes
+
+###
+POST http://localhost:3000/transacoes/cadastro
+Content-type: application/json
+
+{
+    "token": "n7g312f2vqm42m6og5ouzd",
+    "id_usuario_recebedor": 2,
+    "valor": 0.01
+}
+
+###
+POST http://localhost:3000/transacoes/estorno
+Content-type: application/json
+
+{
+    "token": "n7g312f2vqm42m6og5ouzd",
+    "id_transacao": 11
+}
+
+###
+POST http://localhost:3000/transacoes/busca
+Content-type: application/json
+
+{
+    "data_inicio": "2021-01-08",
+    "data_fim": "2021-01-09"
+}
